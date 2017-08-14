@@ -11,11 +11,11 @@ Therefore, behold the incredible-validations project.
 
 # What could you do with incredible-validations?
 
-At the very begining it will be possible to define validation suites for your POJOs both from annotations or through mapping xml (familiar with Hibernate? Yeah, thats similar). 
+At the very begining it will be possible to define validation suites for your POJOs both from annotations or through mapping xml (familiar with Hibernate? Yeah, that's similar). 
 
-You will be able to stablish if a field should be between values, respect one (or more regex), be null (or not) [even conditionally to another field!!!]
+You will be able to establish if a field should be between values, respect one (or more regex), be null (or not) [even conditionally to another field!!!]
 
-My idea is that the code is actually agnostic to these validations, that meaning that there won't be any integrity rules that actually disallow to enter invalid values. Instead it will be possible to call a validate() function which will accept your ValidableEntity and optionally several attributes (such which validation suite to use when a single POJO should have more than one validation rules).
+My idea is that the code is actually agnostic to these validations, that meaning that there won't be any integrity rules that actually disallow to enter invalid values. Instead it will be possible to call a validate() function which will accept your ValidableEntity and optionally several attributes (such as which validation suite to use when a single POJO should have more than one validation rules).
 
 The output of the validation will be a CustomValidationException containing a data container filled with all the failed fields and the actual reason.
 
